@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+2.#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 RansomGuard 업데이트 패키지 생성 스크립트
