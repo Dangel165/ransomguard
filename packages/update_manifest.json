@@ -1,0 +1,16 @@
+{
+  "latest_version": "4.0.0",
+  "update_url": "https://github.com/Dangel165/ransomguard/releases/download/v1.0.0/ransomguard_v1.0.0.zip",
+  "file_size": 3183,
+  "sha256": "95ed045be343d2514f5e6688bddb244ec9aacb20e9bd4840c97b59ae26e547e0",
+  "release_date": "2026-01-20T03:48:13.629752",
+  "changelog": {
+    "ko": "랜섬웨어 데이터 베이스 추가 (15개 랜섬웨어 패밀리)",
+    "en": "Added ransomware database (15 ransomware families)"
+  },
+  "required_files": [
+    "ransomware_db.json",
+    "videos/",
+    "tools/"
+  ]
+}
