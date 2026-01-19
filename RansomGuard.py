@@ -133,7 +133,7 @@ class RansomGuardApp:
         }
         
         # 업데이트 URL 설정 
-        self.update_manifest_url = "https://raw.githubusercontent.com/Dangel165/ransomguard/main/packages/update_manifest.json"
+        self.update_manifest_url = ""
         
         self.update_title()
         self.root.geometry("1200x700")
@@ -969,3 +969,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
