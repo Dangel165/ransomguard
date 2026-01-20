@@ -1,0 +1,54 @@
+RansomGuard 소프트웨어 라이선스 계약서
+Software License Agreement
+
+Copyright (c) 2026 Dangel. All rights reserved.
+
+본 소프트웨어 및 관련 문서 파일(이하 "소프트웨어")을 사용하기 전에 다음 약관을 주의 깊게 읽어주시기 바랍니다.
+
+=== 한국어 ===
+
+1. 라이선스 부여
+본 소프트웨어는 무료로 제공되며, 개인 및 교육 목적으로 자유롭게 사용할 수 있습니다.
+
+2. 사용 제한
+- 본 소프트웨어는 "있는 그대로" 제공되며, 명시적이거나 묵시적인 어떠한 보증도 제공하지 않습니다.
+- 상업적 목적으로 재배포하거나 판매할 수 없습니다.
+- 소프트웨어의 저작권 표시를 제거하거나 수정할 수 없습니다.
+
+3. 책임의 제한
+본 소프트웨어의 사용으로 인해 발생하는 어떠한 손해에 대해서도 제작자는 책임을 지지 않습니다.
+
+4. 데이터 수집
+본 소프트웨어는 사용자의 개인정보를 수집하지 않습니다. 인터넷 연결은 오직 랜섬웨어 데이터베이스 업데이트를 위해서만 사용됩니다.
+
+5. 교육 목적
+본 소프트웨어는 랜섬웨어에 대한 정보 제공 및 교육 목적으로 제작되었습니다.
+
+=== English ===
+
+1. License Grant
+This software is provided free of charge and may be freely used for personal and educational purposes.
+
+2. Restrictions
+- This software is provided "as is" without warranty of any kind, either express or implied.
+- You may not redistribute or sell this software for commercial purposes.
+- You may not remove or modify copyright notices in the software.
+
+3. Limitation of Liability
+The author shall not be liable for any damages arising from the use of this software.
+
+4. Data Collection
+This software does not collect personal information. Internet connection is used only for ransomware database updates.
+
+5. Educational Purpose
+This software is created for informational and educational purposes about ransomware.
+
+=== 동의 / Agreement ===
+
+본 소프트웨어를 설치함으로써 위의 모든 조항에 동의하는 것으로 간주됩니다.
+By installing this software, you agree to all the terms above.
+
+---
+Developer: Dangel
+Version: 1.0.0
+Date: 2026-01-20
