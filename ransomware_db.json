@@ -1,0 +1,497 @@
+{
+  "version": "4.0.0",
+  "last_updated": "2026-01-19T18:00:00Z",
+  "ransomware_families": [
+    {
+      "id": "wannacry-001",
+      "name": "WannaCry",
+      "family": "WannaCry",
+      "variant": null,
+      "aliases": ["WannaCrypt", "WCry", "WanaCrypt0r"],
+      "known_extensions": [".wncry", ".wcry", ".wncryt"],
+      "ransom_note_filenames": ["@Please_Read_Me@.txt", "@WanaDecryptor@.exe"],
+      "ransom_note_patterns": [
+        "Ooops, your files have been encrypted!",
+        "Wana Decrypt0r",
+        "bitcoin"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": true,
+      "decryption_tools": [
+        {
+          "name": "WanaKiwi",
+          "provider": "Adrien Guinet",
+          "download_url": "https://github.com/gentilkiwi/wanakiwi/releases",
+          "instructions_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "effectiveness": "partial",
+          "requirements": "Windows XP, Vista, 7, 2003, 2008 (not rebooted)",
+          "supported_variants": ["original"]
+        }
+      ],
+      "recovery_video_path": "videos/wannacry_recovery.mp4",
+      "recovery_tool_path": "tools/wanakiwi.exe",
+      "video_uploader": "Dangel",
+      "tool_original_author": "Adrien Guinet (gentilkiwi)",
+      "tool_guide_creator": "Dangel",
+      "first_seen": "2017-05-12",
+      "severity": "critical",
+      "notes": "Exploits EternalBlue SMB vulnerability. Global outbreak in May 2017.",
+      "references": [
+        "https://www.nomoreransom.org/en/decryption-tools.html",
+        "https://en.wikipedia.org/wiki/WannaCry_ransomware_attack"
+      ]
+    },
+    {
+      "id": "lockbit3-001",
+      "name": "LockBit 3.0",
+      "family": "LockBit",
+      "variant": "3.0",
+      "aliases": ["LockBit Black"],
+      "known_extensions": [".lockbit", ".abcd"],
+      "ransom_note_filenames": ["Restore-My-Files.txt"],
+      "ransom_note_patterns": [
+        "LockBit 3.0",
+        "All your important files are stolen and encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": ["http://lockbit...onion"],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": "videos/lockbit_prevention.mp4",
+      "recovery_tool_path": null,
+      "video_uploader": "Security Team",
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2022-06-01",
+      "severity": "critical",
+      "notes": "Uses StealBit exfiltration tool. RaaS (Ransomware as a Service) model.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a"
+      ]
+    },
+    {
+      "id": "ryuk-001",
+      "name": "Ryuk",
+      "family": "Ryuk",
+      "variant": null,
+      "aliases": ["Hermes"],
+      "known_extensions": [".ryk", ".RYK"],
+      "ransom_note_filenames": ["RyukReadMe.txt", "RyukReadMe.html"],
+      "ransom_note_patterns": [
+        "Ryuk",
+        "No system is safe",
+        "balance of shadow universe"
+      ],
+      "contact_emails": ["ryuk@protonmail.com"],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": "videos/ryuk_analysis.mp4",
+      "recovery_tool_path": null,
+      "video_uploader": "CyberSec Analyst",
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2018-08-01",
+      "severity": "critical",
+      "notes": "Targets large organizations. Often follows TrickBot infection. High ransom demands.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-302a"
+      ]
+    },
+    {
+      "id": "revil-001",
+      "name": "REvil",
+      "family": "REvil",
+      "variant": null,
+      "aliases": ["Sodinokibi", "Sodin"],
+      "known_extensions": [".sodinokibi", ".encrypted"],
+      "ransom_note_filenames": ["[random]-readme.txt"],
+      "ransom_note_patterns": [
+        "REvil",
+        "Sodinokibi",
+        "Your files are encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": ["http://revil...onion"],
+      "decryption_available": true,
+      "decryption_tools": [
+        {
+          "name": "REvil Decryptor",
+          "provider": "Bitdefender",
+          "download_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "instructions_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "effectiveness": "full",
+          "requirements": "Master key required (obtained from law enforcement)",
+          "supported_variants": ["all"]
+        }
+      ],
+      "recovery_video_path": "videos/revil_decryption_guide.mp4",
+      "recovery_tool_path": "tools/revil_decryptor.exe",
+      "video_uploader": "Bitdefender Team",
+      "tool_original_author": "Bitdefender",
+      "tool_guide_creator": "Bitdefender",
+      "first_seen": "2019-04-01",
+      "severity": "critical",
+      "notes": "RaaS operation. Shut down in 2021 but infrastructure seized. Decryption keys released.",
+      "references": [
+        "https://www.nomoreransom.org/en/decryption-tools.html"
+      ]
+    },
+    {
+      "id": "maze-001",
+      "name": "Maze",
+      "family": "Maze",
+      "variant": null,
+      "aliases": ["ChaCha"],
+      "known_extensions": [".maze", ".encrypted"],
+      "ransom_note_filenames": ["DECRYPT-FILES.txt"],
+      "ransom_note_patterns": [
+        "Maze Team",
+        "Your files have been encrypted",
+        "published on our news website"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": null,
+      "recovery_tool_path": null,
+      "video_uploader": null,
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2019-05-01",
+      "severity": "high",
+      "notes": "First to use double extortion (encryption + data leak). Ceased operations in 2020.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "conti-001",
+      "name": "Conti",
+      "family": "Conti",
+      "variant": null,
+      "aliases": [],
+      "known_extensions": [".conti", ".CONTI"],
+      "ransom_note_filenames": ["readme.txt", "CONTI_README.txt"],
+      "ransom_note_patterns": [
+        "CONTI",
+        "All of your files are currently encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": ["http://conti...onion"],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": "videos/conti_response.mp4",
+      "recovery_tool_path": null,
+      "video_uploader": "CISA",
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2020-02-01",
+      "severity": "critical",
+      "notes": "Fast encryption speed. Targets large enterprises. Leaked source code in 2022.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-265a"
+      ]
+    },
+    {
+      "id": "darkside-001",
+      "name": "DarkSide",
+      "family": "DarkSide",
+      "variant": null,
+      "aliases": [],
+      "known_extensions": [".darkside"],
+      "ransom_note_filenames": ["README.[ID].TXT"],
+      "ransom_note_patterns": [
+        "DarkSide",
+        "Your network has been breached"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": null,
+      "recovery_tool_path": null,
+      "video_uploader": null,
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2020-08-01",
+      "severity": "critical",
+      "notes": "Colonial Pipeline attack (2021). Shut down after high-profile attacks.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "blackcat-001",
+      "name": "BlackCat",
+      "family": "BlackCat",
+      "variant": null,
+      "aliases": ["ALPHV", "Noberus"],
+      "known_extensions": [".blackcat", ".alphv"],
+      "ransom_note_filenames": ["RECOVER-[ID]-FILES.txt"],
+      "ransom_note_patterns": [
+        "BlackCat",
+        "ALPHV",
+        "Your data is stolen and encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": ["http://alphv...onion"],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": "videos/blackcat_analysis.mp4",
+      "recovery_tool_path": null,
+      "video_uploader": "Threat Intel Team",
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2021-11-01",
+      "severity": "critical",
+      "notes": "Written in Rust. Cross-platform (Windows, Linux). Sophisticated RaaS operation.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-075a"
+      ]
+    },
+    {
+      "id": "hive-001",
+      "name": "Hive",
+      "family": "Hive",
+      "variant": null,
+      "aliases": [],
+      "known_extensions": [".hive", ".hive_encrypted"],
+      "ransom_note_filenames": ["HOW_TO_DECRYPT.txt"],
+      "ransom_note_patterns": [
+        "Hive",
+        "Your network has been breached"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": true,
+      "decryption_tools": [
+        {
+          "name": "Hive Decryptor",
+          "provider": "FBI / Europol",
+          "download_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "instructions_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "effectiveness": "full",
+          "requirements": "Keys obtained from law enforcement takedown",
+          "supported_variants": ["all"]
+        }
+      ],
+      "recovery_video_path": "videos/hive_decryption.mp4",
+      "recovery_tool_path": "tools/hive_decryptor.exe",
+      "video_uploader": "FBI Cyber Division",
+      "tool_original_author": "FBI / Europol",
+      "tool_guide_creator": "FBI / Europol",
+      "first_seen": "2021-06-01",
+      "severity": "critical",
+      "notes": "Taken down by FBI in 2023. Decryption keys released to victims.",
+      "references": [
+        "https://www.nomoreransom.org/en/decryption-tools.html"
+      ]
+    },
+    {
+      "id": "ragnar-001",
+      "name": "Ragnar Locker",
+      "family": "Ragnar Locker",
+      "variant": null,
+      "aliases": [],
+      "known_extensions": [".ragnar_[ID]"],
+      "ransom_note_filenames": [".RGNR_[ID].txt"],
+      "ransom_note_patterns": [
+        "Ragnar Locker",
+        "Your network has been compromised"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": null,
+      "recovery_tool_path": null,
+      "video_uploader": null,
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2019-12-01",
+      "severity": "high",
+      "notes": "Targets large organizations. Uses virtual machines to evade detection.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "netwalker-001",
+      "name": "Netwalker",
+      "family": "Netwalker",
+      "variant": null,
+      "aliases": ["Mailto"],
+      "known_extensions": [".mailto", ".netwalker"],
+      "ransom_note_filenames": ["[ID]-Readme.txt"],
+      "ransom_note_patterns": [
+        "Netwalker",
+        "Your files are encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": null,
+      "recovery_tool_path": null,
+      "video_uploader": null,
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2019-08-01",
+      "severity": "high",
+      "notes": "Targeted healthcare during COVID-19. Disrupted by law enforcement in 2021.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "babuk-001",
+      "name": "Babuk",
+      "family": "Babuk",
+      "variant": null,
+      "aliases": ["Babyk"],
+      "known_extensions": [".babuk", ".babyk"],
+      "ransom_note_filenames": ["How To Restore Your Files.txt"],
+      "ransom_note_patterns": [
+        "Babuk Locker",
+        "Your files have been encrypted"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": null,
+      "recovery_tool_path": null,
+      "video_uploader": null,
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2021-01-01",
+      "severity": "high",
+      "notes": "Source code leaked in 2021. Can encrypt ESXi virtual machines.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "clop-001",
+      "name": "Clop",
+      "family": "Clop",
+      "variant": null,
+      "aliases": ["Cl0p"],
+      "known_extensions": [".clop", ".Clop", ".C_L_O_P"],
+      "ransom_note_filenames": ["ClopReadMe.txt", "README_README.txt"],
+      "ransom_note_patterns": [
+        "Clop",
+        "Your network has been penetrated"
+      ],
+      "contact_emails": [],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": false,
+      "decryption_tools": [],
+      "recovery_video_path": "videos/clop_moveit_attack.mp4",
+      "recovery_tool_path": null,
+      "video_uploader": "Security Researcher",
+      "tool_original_author": null,
+      "tool_guide_creator": null,
+      "first_seen": "2019-02-01",
+      "severity": "critical",
+      "notes": "Exploited MOVEit vulnerability in 2023. Massive supply chain attack.",
+      "references": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories"
+      ]
+    },
+    {
+      "id": "dharma-001",
+      "name": "Dharma",
+      "family": "Dharma",
+      "variant": null,
+      "aliases": ["CrySis"],
+      "known_extensions": [".dharma", ".wallet", ".zzzzz"],
+      "ransom_note_filenames": ["FILES ENCRYPTED.txt", "info.hta"],
+      "ransom_note_patterns": [
+        "Dharma",
+        "All your files have been encrypted"
+      ],
+      "contact_emails": ["dharma@protonmail.com"],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": true,
+      "decryption_tools": [
+        {
+          "name": "Dharma Decryptor",
+          "provider": "Kaspersky",
+          "download_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "instructions_url": "https://www.nomoreransom.org/en/decryption-tools.html",
+          "effectiveness": "partial",
+          "requirements": "Only works for older variants with known keys",
+          "supported_variants": ["older variants"]
+        }
+      ],
+      "recovery_video_path": "videos/dharma_recovery.mp4",
+      "recovery_tool_path": "tools/dharma_decryptor.exe",
+      "video_uploader": "Kaspersky Lab",
+      "tool_original_author": "Kaspersky",
+      "tool_guide_creator": "Kaspersky",
+      "first_seen": "2016-11-01",
+      "severity": "high",
+      "notes": "RaaS model. Targets small to medium businesses via RDP.",
+      "references": [
+        "https://www.nomoreransom.org/en/decryption-tools.html"
+      ]
+    },
+    {
+      "id": "stop-001",
+      "name": "STOP",
+      "family": "STOP",
+      "variant": null,
+      "aliases": ["Djvu", "STOP Djvu"],
+      "known_extensions": [".djvu", ".djvuu", ".udjvu", ".stop"],
+      "ransom_note_filenames": ["_readme.txt", "_openme.txt"],
+      "ransom_note_patterns": [
+        "STOP",
+        "Don't worry, you can return all your files"
+      ],
+      "contact_emails": ["helpmanager@mail.ch"],
+      "bitcoin_addresses": [],
+      "tor_urls": [],
+      "decryption_available": true,
+      "decryption_tools": [
+        {
+          "name": "STOPDecrypter",
+          "provider": "Emsisoft",
+          "download_url": "https://www.emsisoft.com/ransomware-decryption-tools/stop-djvu",
+          "instructions_url": "https://www.emsisoft.com/ransomware-decryption-tools/stop-djvu",
+          "effectiveness": "partial",
+          "requirements": "Only works if offline keys were used",
+          "supported_variants": ["offline key variants"]
+        }
+      ],
+      "recovery_video_path": "videos/stop_djvu_recovery.mp4",
+      "recovery_tool_path": "tools/stop_decrypter.exe",
+      "video_uploader": "Emsisoft",
+      "tool_original_author": "Emsisoft",
+      "tool_guide_creator": "Emsisoft",
+      "first_seen": "2018-01-01",
+      "severity": "medium",
+      "notes": "Most widespread ransomware. Targets individual users. Often bundled with malware.",
+      "references": [
+        "https://www.emsisoft.com/ransomware-decryption-tools/stop-djvu"
+      ]
+    }
+  ]
+}
